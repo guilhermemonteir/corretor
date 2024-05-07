@@ -1,0 +1,12 @@
+with open(r'C:\Users\guilh\Downloads\corretor.txt', mode = 'r', encoding='utf-8') as arquivo:
+    conteudo = arquivo.readlines()
+    pa = conteudo[0:37593]
+    pb = (conteudo[37594:44838])
+    pc = (conteudo[44839:])
+    
+for items in pa:
+    entrada = str.lower(input("digite uma palavra:"))
+    if entrada == items:
+        print()
+    else:
+        print('essa palavra não existe.')
